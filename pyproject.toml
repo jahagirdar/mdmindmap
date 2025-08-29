@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdmindmap"
+version = "0.1.0"
+description = "Generate interactive mindmaps from Markdown with expand/collapse and editing support"
+authors = [{ name="Your Name", email="you@example.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+    "markdown",
+    "pyyaml",
+    "flask"
+]
+
+[project.scripts]
+mdmindmap = "mdmindmap.cli:main"
+
